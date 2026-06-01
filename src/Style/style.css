@@ -1,9 +1,14 @@
 h1 {
     text-align: center; 
+    text-decoration: underline;
+    color: rgb(255, 255, 255);
+    background-color: rgb(44, 44, 44);
+    padding: 25px;
+    border-radius: 10px;
 }
 
 form {
-    background-color: rgb(44, 44, 44);
-    padding: 20px;
-    border-radius: 5px;
+    padding: 25px;
+    border-radius: 10px;
+    font-family: Arial, sans-serif;
 }

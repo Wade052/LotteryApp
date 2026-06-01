@@ -1,13 +1,11 @@
-// Reference on how to use the alert function in JavaScript
-var inputNum = document.getElementById('inputNum');
+var UserNum1 = document.getElementById('Num1');
+var UserNum2 = document.getElementById('Num2');
+var UserNum3 = document.getElementById('Num3');
+var UserNum4 = document.getElementById('Num4');
+var UserNum5 = document.getElementById('Num5');
+var UserNum6 = document.getElementById('Num6');
 
-document.getElementById('btnA').addEventListener('click', () => {
-    //alert('I got clicked!');
-    inputNum.style.backgroundColor = 'green';
-    alert('You picked ' + inputNum.value);
-})
-
-//Lottery Game
+//Hold the numbers that the user picks for each ticket type in these arrays
 var LotteryNumbersB = []; // This will hold the 3 numbers that the user picks for the Basic Ticket
 var LotteryNumbersS = []; // This will hold the 5 numbers that the user picks for the Standard Ticket
 var LotteryNumbersM = []; // This will hold the 6 numbers that the user picks for the Mega Ticket
@@ -24,4 +22,13 @@ var MegaTicket = document.getElementById('MegaTicket');
 var Winnings = 0;
 var Spent = 0;
 var Profit = 0;
+
+let BTicket = false;
+let STicket = false;
+let MTicket = false;
+
+const BasicTicket = document.getElementById('BasicTicket');
+const StandardTicket = document.getElementById('StandardTicket');
+const MegaTicket = document.getElementById('MegaTicket');
+const PlayButton = document.getElementById('Play');
 
